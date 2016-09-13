@@ -1,0 +1,20 @@
+[package]
+name = "tokio-marionette"
+version = "0.1.0"
+authors = ["mmacedoeu <contato@mmacedo.eu.org>"]
+
+[dependencies]
+log = "0.3.6"
+futures = "0.1"
+tokio-core = "0.1"
+bytes = { git = "https://github.com/carllerche/bytes" }
+tokio-proto = { git = "https://github.com/tokio-rs/tokio-proto" }
+tokio-service = { git = "https://github.com/tokio-rs/tokio-service" }
+clippy = {version = "~0.0.80", optional = true}
+
+[dev-dependencies]
+tokio-timer = { git = "https://github.com/tokio-rs/tokio-timer" }
+tokio-middleware = { git = "https://github.com/tokio-rs/tokio-middleware" }
+slog = { git = "https://github.com/dpc/slog-rs", branch = "master" }
+slog-term = { git = "https://github.com/dpc/slog-rs", branch = "master" }
+slog-stdlog = { git = "https://github.com/dpc/slog-rs", branch = "master" }
